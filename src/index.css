@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: corporate --default;
+}
+
+@plugin "daisyui/theme" {
+    name: "corporate";
+    default: true;
+    --color-primary: #066eaa;
+    --color-secondary: #27dbc6;
+    --color-secondary-content: #fb7000;
+    --color-accent: #29aa3a;
+}
+
+@font-face {
+    font-family: "game-font";
+    src: url("./assets/fonts/main.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "game-font-bold";
+    src: url("./assets/fonts/bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "game-font", sans-serif;
+}
